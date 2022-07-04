@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <remote name="ryz"
+          fetch="https://github.com/kutemeikito" />
+
+  <!-- Device Tree & Vendor Tree -->
+  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ryz" revision="fifteen/clownui" />
+  <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="ryz" revision="udc" />
+
+  <!-- Kernel & Clang -->
+  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="ryz" revision="fourteen/main" />
+
+  <!-- MIUI Camera -->
+  <project path="vendor/miuicamera" name="kutemeikito/android_vendor_miuicamera" remote="github" revision="arrow-12.0-a3" />
+
+  <project path="vendor/clown-priv/keys" name="ClownUI/vendor_clown-priv_keys-template" remote="github" revision="master" />
+
+</manifest>
