@@ -27,7 +27,7 @@
   <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="Ryuzenn" revision="android-12.1" />
   <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" remote="Ryuzenn" revision="android-12.1" />
 
-  <!-- NFC Stuff -->
+  <!-- NFC Stuff >
   <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="Arrow" revision="arrow-12.0" />
   <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="Arrow" revision="arrow-12.0" />
   <project path="vendor/nxp/opensource/commonsys/frameworks" name="android_vendor_nxp_opensource_frameworks" remote="Arrow" revision="arrow-12.0" />
@@ -35,14 +35,14 @@
   <project path="vendor/nxp/opensource/sn100x/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="Arrow" revision="arrow-12.0-sn100x" />
   <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="Arrow" revision="arrow-12.0-sn100x" />
   <project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="Arrow" revision="arrow-12.0-pn5xx" />
-  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="Arrow" revision="arrow-12.0-pn5xx" />
+  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="Arrow" revision="arrow-12.0-pn5xx" /-->
 
-    <!-- Add guards for NFC repositories -->
+    <!-- Add guards for NFC repositories >
     <linkfile src="os_pickup.bp" dest="hardware/nxp/Android.bp" />
     <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
     <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
     <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" />
     <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" /-->
 
 </manifest>
