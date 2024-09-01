@@ -1,48 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
-  <remote name="Ryuzenn"
+  <remote name="ryz"
           fetch="https://github.com/kutemeikito" />
+
+  <remote name="gitlab"
+          fetch="https://gitlab.com/" />
 
   <remote name="Arrow"
           fetch="https://github.com/ArrowOS" />
 
   <!-- Device Tree & Vendor Tree -->
-  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="Ryuzenn" revision="xdroid" />
-  <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="Ryuzenn" revision="12.1" />
+  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ryz" revision="pos" />
+  <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="ryz" revision="udc" />
 
   <!-- Kernel & Clang -->
-  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="Ryuzenn" revision="MiuiRS" />
-  <project path="prebuilts/clang/host/linux-x86/clang-rastamod" name="RastaMod69-Clang" remote="Ryuzenn" revision="clang-12.0" />
+  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="ryz" revision="fourteen/noksu" />
+  <project path="prebuilts/clang/host/linux-x86/clang-rastamod" name="kutemeikito/RastaMod69-Clang" remote="gitlab" revision="clang-20.0" />
 
   <!-- MIUI Camera -->
   <project path="vendor/miuicamera" name="ArrowOS-Devices/android_vendor_miuicamera" remote="github" revision="arrow-12.0-a3" />
-
-  <!-- Hardware Stuff -->
-  <remove-project name="android_hardware_qcom_audio" />
-  <remove-project name="android_hardware_qcom_display" />
-  <remove-project name="android_hardware_qcom_media" />
-
-  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" remote="Ryuzenn" revision="android-12.1" />
-  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="Ryuzenn" revision="android-12.1" />
-  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" remote="Ryuzenn" revision="android-12.1" />
-
-  <!-- NFC Stuff >
-  <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="Arrow" revision="arrow-12.0" />
-  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="Arrow" revision="arrow-12.0" />
-  <project path="vendor/nxp/opensource/commonsys/frameworks" name="android_vendor_nxp_opensource_frameworks" remote="Arrow" revision="arrow-12.0" />
-  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="Arrow" revision="arrow-12.0" />
-  <project path="vendor/nxp/opensource/sn100x/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="Arrow" revision="arrow-12.0-sn100x" />
-  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="Arrow" revision="arrow-12.0-sn100x" />
-  <project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="Arrow" revision="arrow-12.0-pn5xx" />
-  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="Arrow" revision="arrow-12.0-pn5xx" /-->
-
-    <!-- Add guards for NFC repositories >
-    <linkfile src="os_pickup.bp" dest="hardware/nxp/Android.bp" />
-    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
-    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" />
-    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" /-->
-
 </manifest>
