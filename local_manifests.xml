@@ -13,6 +13,7 @@
   <!-- Device Tree & Vendor Tree -->
   <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ryz" revision="pos" />
   <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="ryz" revision="udc" />
+  <project path="vendor/extra" name="vendor_extra" remote="ryz" revision="fourteen" />
 
   <!-- Kernel & Clang -->
   <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="ryz" revision="fourteen/noksu" />
