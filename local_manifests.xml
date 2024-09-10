@@ -7,6 +7,9 @@
   <remote name="gitlab"
           fetch="https://gitlab.com/" />
 
+  <remote name="github"
+          fetch="https://github.com/" />
+
   <remote name="Arrow"
           fetch="https://github.com/ArrowOS" />
 
@@ -14,6 +17,20 @@
   <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ryz" revision="pos" />
   <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="ryz" revision="udc" />
   <project path="vendor/extra" name="vendor_extra" remote="ryz" revision="fourteen" />
+
+  <!-- replace pixelos frameworks-->
+  <remove-project name="frameworks_base"/>
+  <project path="frameworks/base" name="frameworks_base-Pixel" remote="ryz" revision="fourteen" />
+
+  <remove-project name="frameworks_av"/>
+  <project path="frameworks/av" name="frameworks_av-pixel" remote="ryz" revision="fourteen" />
+
+  <remove-project name="vendor_aosp"/>
+  <project path="vendor/aosp" name="vendor_aosp-pixel" remote="ryz" revision="fourteen" />
+
+  <!-- Replace Hals Display for fix GCAM-->
+  <remove-project name="LineageOS/android_hardware_qcom_display"/>
+  <project path="hardware/qcom-caf/sm8150/display" name="crdroidandroid/android_hardware_qcom_display" groups="qcom" revision="14.0-caf-sm8150" remote="github"/>
 
   <!-- Kernel & Clang -->
   <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="ryz" revision="fourteen/noksu" />
