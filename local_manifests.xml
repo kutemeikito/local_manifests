@@ -25,7 +25,10 @@
   <!-- Replace Hardware/interface from Lineage-->
   <remove-project name="hardware_interfaces"/>
   <project path="hardware/interfaces" name="LineageOS/android_hardware_interfaces" groups="qcom" revision="lineage-21.0" remote="github"/>
-
+  
+  <!-- replace MistOS frameworks_base -->
+  <remove-project name="frameworks_base"/>
+  <project path="frameworks/base" name="frameworks_base-mist" remote="ryz" revision="qpr3" />
 
   <!-- Kernel & Clang -->
   <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="ryz" revision="fourteen/noksu" />
