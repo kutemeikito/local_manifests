@@ -14,24 +14,21 @@
           fetch="https://github.com/ArrowOS" />
 
   <!-- Device Tree & Vendor Tree -->
-  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ryz" revision="mist" />
+  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ryz" revision="fourteen/derp" />
   <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="ryz" revision="udc" />
-  <project path="vendor/extra" name="vendor_extra" remote="ryz" revision="fourteen" />
 
-  <!-- Replace Hals Display for fix GCAM-->
-  <remove-project name="android_hardware_qcom_display"/>
-  <project path="hardware/qcom-caf/sm8150/display" name="crdroidandroid/android_hardware_qcom_display" groups="qcom" revision="14.0-caf-sm8150" remote="github"/>
-
-  <!-- Replace Hardware/interface from Lineage-->
-  <remove-project name="hardware_interfaces"/>
-  <project path="hardware/interfaces" name="LineageOS/android_hardware_interfaces" groups="qcom" revision="lineage-21.0" remote="github"/>
-  
-  <!-- replace MistOS frameworks_base -->
+  <!-- replace Derpfest frameworks -->
   <remove-project name="frameworks_base"/>
-  <project path="frameworks/base" name="frameworks_base-mist" remote="ryz" revision="qpr3" />
+  <project path="frameworks/base" name="frameworks_base-derp" remote="ryz" revision="14" />
+  <remove-project name="frameworks_av"/>
+  <project path="frameworks/av" name="frameworks_av-derp" remote="ryz" revision="14" />
+  <remove-project name="vendor_derp"/>
+  <project path="vendor/derp" name="vendor_derp" remote="ryz" revision="14" />
+  <remove-project name="system_core"/>
+  <project path="system/core" name="system_core-derp" remote="ryz" revision="14" />
 
   <!-- Kernel & Clang -->
-  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="ryz" revision="fourteen/noksu" />
+  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="ryz" revision="fourteen/main" />
   <project path="prebuilts/clang/host/linux-x86/clang-rastamod" name="kutemeikito/RastaMod69-Clang" remote="gitlab" revision="clang-20.0" />
 
   <!-- MIUI Camera -->
