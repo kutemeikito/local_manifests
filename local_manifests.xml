@@ -32,7 +32,7 @@
   <project path="hardware/qcom-caf/sm8150/display" name="crdroidandroid/android_hardware_qcom_display" groups="qcom" revision="14.0-caf-sm8150" remote="github"/>
 
   <!-- Kernel & Clang -->
-  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="ryz" revision="fourteen/noksu" />
+  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="ryz" revision="fourteen/main" />
   <project path="prebuilts/clang/host/linux-x86/clang-rastamod" name="kutemeikito/RastaMod69-Clang" remote="gitlab" revision="clang-20.0" />
 
   <!-- MIUI Camera -->
