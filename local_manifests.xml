@@ -16,6 +16,7 @@
   <!-- Device Tree & Vendor Tree -->
   <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ryz" revision="fourteen/pixelos" />
   <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="ryz" revision="udc" />
+  <project path="vendor/pixel-priv/keys" name="android_vendor_lineage-priv_keys-template" remote="ryz" revision="pixel" />
 
   <!-- replace pixelos frameworks-->
   <remove-project name="frameworks_base"/>
