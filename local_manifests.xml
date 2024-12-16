@@ -14,19 +14,19 @@
           fetch="https://github.com/ArrowOS" />
 
   <!-- Device Tree & Vendor Tree -->
-  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ryz" revision="fourteen/pixelos" />
+  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ryz" revision="fifteen/pixelos" />
   <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="ryz" revision="udc" />
   <project path="vendor/pixel-priv/keys" name="android_vendor_lineage-priv_keys-template" remote="ryz" revision="pixel" />
 
   <!-- replace pixelos frameworks-->
   <remove-project name="frameworks_base"/>
-  <project path="frameworks/base" name="frameworks_base-Pixel" remote="ryz" revision="fourteen" />
+  <project path="frameworks/base" name="frameworks_base-pixel15" remote="ryz" revision="fifteen" />
 
   <remove-project name="frameworks_av"/>
-  <project path="frameworks/av" name="frameworks_av-pixel" remote="ryz" revision="fourteen" />
+  <project path="frameworks/av" name="frameworks_av-pixel15" remote="ryz" revision="fifteen" />
 
   <remove-project name="vendor_aosp"/>
-  <project path="vendor/aosp" name="vendor_aosp-pixel" remote="ryz" revision="fourteen" />
+  <project path="vendor/aosp" name="vendor_aosp-pixel15" remote="ryz" revision="fifteen" />
 
   <!-- Replace Hals Display for fix GCAM-->
   <remove-project name="LineageOS/android_hardware_qcom_display"/>
