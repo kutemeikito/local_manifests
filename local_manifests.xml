@@ -4,9 +4,6 @@
   <remote name="ryz"
           fetch="https://github.com/kutemeikito" />
 
-  <remote name="gitlab"
-          fetch="https://gitlab.com/" />
-
   <remote name="github"
           fetch="https://github.com/" />
 
@@ -15,27 +12,9 @@
 
   <!-- Device Tree & Vendor Tree -->
   <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ryz" revision="fifteen/pixelos" />
-  <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="ryz" revision="udc" />
-  <project path="vendor/pixel-priv/keys" name="android_vendor_lineage-priv_keys-template" remote="ryz" revision="pixel" />
-
-  <!-- replace pixelos frameworks-->
-  <remove-project name="frameworks_base"/>
-  <project path="frameworks/base" name="frameworks_base-pixel15" remote="ryz" revision="fifteen" />
-
-  <remove-project name="frameworks_av"/>
-  <project path="frameworks/av" name="frameworks_av-pixel15" remote="ryz" revision="fifteen" />
-
-  <remove-project name="vendor_aosp"/>
-  <project path="vendor/aosp" name="vendor_aosp-pixel15" remote="ryz" revision="fifteen" />
-
-  <!-- Replace Hals Display for fix GCAM-->
-  <remove-project name="LineageOS/android_hardware_qcom_display"/>
-  <project path="hardware/qcom-caf/sm8150/display" name="ClownUI/hardware_qcom_display" groups="qcom" revision="vic-caf-sm8150" remote="github"/>
+  <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="ryz" revision="vic" />
 
   <!-- Kernel & Clang -->
-  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="ryz" revision="fourteen/main" />
-  <project path="prebuilts/clang/host/linux-x86/clang-rastamod" name="kutemeikito/RastaMod69-Clang" remote="gitlab" revision="clang-20.0" />
+  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="ryz" revision="fourteen/dynamic" />
 
-  <!-- MIUI Camera -->
-  <project path="vendor/miuicamera" name="ArrowOS-Devices/android_vendor_miuicamera" remote="github" revision="arrow-12.0-a3" />
 </manifest>
