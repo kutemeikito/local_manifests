@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
-  <remote name="ryz"
+  <remote name="personal"
           fetch="https://github.com/kutemeikito" />
-
-  <remote name="github"
-          fetch="https://github.com/" />
 
   <remote name="Arrow"
           fetch="https://github.com/ArrowOS" />
 
   <!-- Device Tree & Vendor Tree -->
-  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ryz" revision="fifteen/pixelos" />
-  <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="ryz" revision="vic" />
+  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="personal" revision="fifteen/ryzos" />
+  <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="personal" revision="vic" />
 
   <!-- Kernel & Clang -->
-  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="ryz" revision="fourteen/dynamic" />
+  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="personal" revision="fourteen/dynamic" />
+
+  <!-- MIUI Camera -->
+  <project path="vendor/miuicamera" name="kutemeikito/android_vendor_miuicamera" remote="github" revision="arrow-12.0-a3" />
 
 </manifest>
